@@ -1,5 +1,5 @@
  .u-section-1 {
-  background-image: url("/images/e8a6a6ad6a62c388b0f4e4813ed793c151dff301347f6f5a8b686a74b1d05e51d1e913f8f0611a79db8485a39a2a73e783dfa729733cf7cab6c658_1280.jpg");
+  background-image: url("../images/e8a6a6ad6a62c388b0f4e4813ed793c151dff301347f6f5a8b686a74b1d05e51d1e913f8f0611a79db8485a39a2a73e783dfa729733cf7cab6c658_1280.jpg");
   background-position: 50% 50%;
   min-height: 751px;
 }
@@ -85,7 +85,7 @@
     margin-right: 0;
   }
 } .u-section-2 {
-  background-image: url("/images/2330428502-0.jpeg");
+  background-image: url("../images/2330428502-0.jpeg");
   background-position: 50% 50%;
 }
 

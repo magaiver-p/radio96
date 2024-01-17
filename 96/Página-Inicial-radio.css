@@ -37,7 +37,7 @@
 }
 
  .u-section-2-1 {
-  background-image: url("/images/57895167e3833ac0a7115f3b16fc238caa9e85bf910a3f9e38dcc35f719ea05cd840d9d0dbe04145af534b77e79498c07365c1e28fa4d2d487a852_1280.png");
+  background-image: url("../images/57895167e3833ac0a7115f3b16fc238caa9e85bf910a3f9e38dcc35f719ea05cd840d9d0dbe04145af534b77e79498c07365c1e28fa4d2d487a852_1280.png");
   background-position: 50% 50%;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .u-section-2-1 .u-image-1 {
-  background-image: url("/images/27731a62d1a9e52e452834b3df39aa00ab7fe769670ee7dba34d757570275a86ac3bfc7a10144baf9a694985f6fee53727327a809b5c645defcb7f_1280.jpg");
+  background-image: url("../images/27731a62d1a9e52e452834b3df39aa00ab7fe769670ee7dba34d757570275a86ac3bfc7a10144baf9a694985f6fee53727327a809b5c645defcb7f_1280.jpg");
   background-position: 50% 50%;
   min-height: 247px;
 }
@@ -61,7 +61,7 @@
 }
 
 .u-section-2-1 .u-image-2 {
-  background-image: url("/images/close-up-man-working-with-sound-equipment_23-2148802281.jpg");
+  background-image: url("../images/close-up-man-working-with-sound-equipment_23-2148802281.jpg");
   background-position: 50% 50%;
   min-height: 247px;
 }
@@ -388,7 +388,7 @@
     min-height: 408px;
   }
 } .u-section-3 {
-  background-image: url("/images/RADIOPOSTELOGO02.jpg");
+  background-image: url("../images/RADIOPOSTELOGO02.jpg");
   background-position: 50% 50%;
 }
 
