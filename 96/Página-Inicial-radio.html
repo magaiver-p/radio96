@@ -220,17 +220,14 @@
         <div class="u-clearfix u-sheet u-sheet-1">
             <h1 class="u-align-center u-custom-font u-font-lobster u-text u-text-white u-title u-text-1">Estudio ao vivo <span style="text-decoration: underline !important;"></span>
             </h1>
-            <!-- Incorporação do player da Twitch -->
-            <div id="twitch-embed" style="position: absolute; top: 3; left: 5; right: 5; width: 100%; height: 100%;"></div>
-            <script src="https://player.twitch.tv/js/embed/v1.js"></script>
-            <script type="text/javascript">
-                new Twitch.Player("twitch-embed", {
-                    channel: "radioliterariacarrapato",
-                    width: "100%",
-                    height: "100%",
-                    parent: "radioliterariacarrapato.online"
-                });
-            </script>
+
+            <div class="custom-expanded u-video u-video-contain u-video-1">
+                <div class="embed-responsive embed-responsive-1">
+
+                    <iframe style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;" class="embed-responsive-item" src="https://player.twitch.tv/?channel=radioliterariacarrapato&parent=radioliterariacarrapato.online" frameborder="0" allowfullscreen="true" scrolling="no"
+                        height="378" width="620"></iframe> data-autoplay="1" frameborder="0" allowfullscreen=""></iframe>
+                </div>
+            </div>
 
 </body>
 
