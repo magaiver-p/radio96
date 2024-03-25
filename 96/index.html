@@ -231,12 +231,16 @@
                 <style>
                     .video-container {
                         display: flex;
+                        flex-direction: column;
+                        align-items: center;
                     }
                     
                     .video-container iframe {
-                        width: 480px;
+                        width: 620px;
                         height: 320px;
                         border: none;
+                        margin-bottom: 20px;
+                        /* Espaçamento entre os vídeos */
                     }
                 </style>
             </head>
@@ -244,16 +248,16 @@
             <body>
                 <div class="video-container">
                     <!-- Twitch Video Embed -->
-                    <div id="twitch-embed" style="width: 480px; height: 320px;"></div>
+                    <div id="twitch-embed"></div>
                     <!-- YouTube Video Embed -->
-                    <iframe width="480" height="320" src="https://www.youtube.com/embed/TCF-6XXhRhA" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="620" height="320" src="https://www.youtube.com/embed/TCF-6XXhRhA" frameborder="0" allowfullscreen></iframe>
                 </div>
 
                 <script src="https://player.twitch.tv/js/embed/v1.js"></script>
                 <script type="text/javascript">
                     new Twitch.Player("twitch-embed", {
                         channel: "radioliterariacarrapato",
-                        width: "480",
+                        width: "620",
                         height: "320",
                         parent: ["radioliterariacarrapato.online"]
                     });
@@ -261,7 +265,6 @@
             </body>
 
             </html>
-
 
         </div>
 
