@@ -144,19 +144,19 @@
         </div>
 
         <head>
-            <script src="https://www.google.com/recaptcha/enterprise.js?render='6Lft91wqAAAAAOECw6xyf_kROcT25S8SIUKrEJq1'"></script>
+            <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lft91wqAAAAAOECw6xyf_kROcT25S8SIUKrEJq1"></script>
             <script>
                 function onSubmit(e) {
                     e.preventDefault(); // Previne o envio padrão do formulário
+
                     grecaptcha.enterprise.ready(function() {
                         grecaptcha.enterprise.execute('6Lft91wqAAAAAOECw6xyf_kROcT25S8SIUKrEJq1', {
-                            action: 'submit'
-                        }).then(function(token) {
-                            // Coloca o token no campo oculto
-                            document.getElementById('recaptchaResponse').value = token;
-                            // Agora que o reCAPTCHA foi validado, o formulário pode ser enviado
-                            document.getElementById('contactForm').submit();
-                        });
+                                action: 'submit'
+                            })
+                            .then(function(token) {
+                                document.getElementById('recaptchaResponse').value = token; // Coloca o token no campo oculto
+                                document.getElementById('contactForm').submit(); // Envia o formulário
+                            });
                     });
                 }
             </script>
