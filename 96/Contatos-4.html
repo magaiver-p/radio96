@@ -142,27 +142,52 @@
                 <p class="u-align-center u-text u-text-4">radio@carrapatocultural.com </p>
             </div>
         </div>
-
-        <form id="contactForm" action="https://forms.nicepagesrv.com/v2/form/process" method="POST" class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" style="padding: 10px" source="email" name="form">
-            <div class="u-form-group u-form-name u-label-none">
-                <label for="name-3b9a" class="u-label">Nome</label>
-                <input type="text" placeholder="Digite seu nome" id="name-3b9a" name="name" class="u-border-none u-input u-input-rectangle u-input-1" required="">
-            </div>
-            <div class="u-form-email u-form-group u-label-none">
-                <label for="email-3b9a" class="u-label">Email</label>
-                <input type="email" placeholder="Digite um e-mail válido" id="email-3b9a" name="email" class="u-border-none u-input u-input-rectangle u-input-2" required="">
-            </div>
-            <div class="u-form-group u-form-message u-label-none">
-                <label for="message-3b9a" class="u-label">Mensagem</label>
-                <textarea placeholder="Digite sua mensagem" rows="4" cols="50" id="message-3b9a" name="message" class="u-border-none u-input u-input-rectangle u-input-3" required=""></textarea>
-            </div>
-            <div class="u-align-center u-form-group u-form-submit">
-                <button type="submit" class="u-border-none u-btn u-btn-rectangle u-btn-submit u-button-style u-palette-1-base u-btn-1">Enviar</button>
-            </div>
-            <div class="u-form-send-message u-form-send-success">Obrigado! Sua mensagem foi enviada com sucesso.</div>
-            <div class="u-form-send-error u-form-send-message">Não foi possível enviar sua mensagem. Por favor, corrija os erros e tente novamente.</div>
-        </form>
-        
+        <head>
+            <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lft91wqAAAAAOECw6xyf_kROcT25S8SIUKrEJq1"></script>
+            <script>
+              function onSubmit(e) {
+                e.preventDefault(); // Evita o envio padrão do formulário
+                grecaptcha.enterprise.ready(function() {
+                  grecaptcha.enterprise.execute('6Lft91wqAAAAAOECw6xyf_kROcT25S8SIUKrEJq1', {action: 'submit'}).then(function(token) {
+                    document.getElementById('recaptchaResponse').value = token;
+                    document.getElementById('contactForm').submit(); // Envia o formulário
+                  });
+                });
+              }
+            </script>
+          </head>
+          
+          <body>
+            <section class="u-align-center u-clearfix u-image u-section-2" id="sec-3a49" data-image-width="5000" data-image-height="3220">
+              <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+                <h2 class="u-custom-font u-font-lobster u-text u-text-default u-text-palette-5-dark-3 u-text-1">Enviar mensagem</h2>
+                <div class="u-form u-form-1">
+                  <form id="contactForm" action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-20 u-form-vertical u-inner-form" style="padding: 10px" source="email" name="form" onsubmit="onSubmit(event)">
+                    <div class="u-form-group u-form-name u-label-none">
+                      <label for="name-3b9a" class="u-label">Nome</label>
+                      <input type="text" placeholder="Digite seu nome" id="name-3b9a" name="name" class="u-border-none u-input u-input-rectangle u-input-1" required="">
+                    </div>
+                    <div class="u-form-email u-form-group u-label-none">
+                      <label for="email-3b9a" class="u-label">Email</label>
+                      <input type="email" placeholder="Digite um e-mail válido" id="email-3b9a" name="email" class="u-border-none u-input u-input-rectangle u-input-2" required="">
+                    </div>
+                    <div class="u-form-group u-form-message u-label-none">
+                      <label for="message-3b9a" class="u-label">Mensagem</label>
+                      <textarea placeholder="Digite sua mensagem" rows="4" cols="50" id="message-3b9a" name="message" class="u-border-none u-input u-input-rectangle u-input-3" required=""></textarea>
+                    </div>
+                    <div class="u-align-center u-form-group u-form-submit">
+                      <button type="submit" class="u-border-none u-btn u-btn-rectangle u-btn-submit u-button-style u-palette-1-base u-btn-1">Enviar</button>
+                      <input type="hidden" id="recaptchaResponse" name="recaptchaResponse">
+                      <input type="hidden" name="formServices" value="42a13dd8-cd64-5dba-50ba-de82c1566c34">
+                    </div>
+                    <div class="u-form-send-message u-form-send-success">Obrigado! Sua mensagem foi enviada com sucesso.</div>
+                    <div class="u-form-send-error u-form-send-message">Não foi possível enviar sua mensagem. Por favor, corrija os erros e tente novamente.</div>
+                  </form>
+                </div>
+              </div>
+            </section>
+          </body>
+          
 
 
         <section class="u-backlink u-clearfix u-grey-80">
