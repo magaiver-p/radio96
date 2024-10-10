@@ -142,26 +142,26 @@
                 <p class="u-align-center u-text u-text-4">radio@carrapatocultural.com </p>
             </div>
         </div>
-
         <head>
             <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lft91wqAAAAAOECw6xyf_kROcT25S8SIUKrEJq1"></script>
             <script>
                 function onSubmit(e) {
-                    e.preventDefault(); // Previne o envio padrão do formulário
-
+                    e.preventDefault(); // Evita o envio padrão do formulário
+        
                     grecaptcha.enterprise.ready(function() {
-                        grecaptcha.enterprise.execute('6Lft91wqAAAAAOECw6xyf_kROcT25S8SIUKrEJq1', {
-                                action: 'submit'
-                            })
-                            .then(function(token) {
-                                document.getElementById('recaptchaResponse').value = token; // Coloca o token no campo oculto
-                                document.getElementById('contactForm').submit(); // Envia o formulário
-                            });
+                        grecaptcha.enterprise.execute('6Lft91wqAAAAAOECw6xyf_kROcT25S8SIUKrEJq1', { action: 'submit' })
+                        .then(function(token) {
+                            document.getElementById('recaptchaResponse').value = token; // Adiciona o token ao campo oculto
+                            document.getElementById('contactForm').submit(); // Envia o formulário
+                        })
+                        .catch(function(error) {
+                            console.error("Erro ao executar reCAPTCHA: ", error);
+                        });
                     });
                 }
             </script>
         </head>
-
+        
         <body>
             <section class="u-align-center u-clearfix u-image u-section-2" id="sec-3a49" data-image-width="5000" data-image-height="3220">
                 <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
@@ -192,7 +192,7 @@
                 </div>
             </section>
         </body>
-
+        
 
         <section class="u-backlink u-clearfix u-grey-80">
             <a class="u-link" href="https://radioliterariacarrapato.online" target="_blank">
